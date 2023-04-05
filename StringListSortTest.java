@@ -34,6 +34,13 @@ public class StringListSortTest {
         actualOutput = input;
         assertEquals(expectedOutput,actualOutput);
 
+
+        input = new ArrayList<>(Arrays.asList());
+        expectedOutput = new ArrayList<>(Arrays.asList());
+        StringListSort.insertionSort(input);
+        actualOutput = input;
+        assertEquals(expectedOutput,actualOutput);
+
     }
 
     @Test
@@ -62,6 +69,14 @@ public class StringListSortTest {
 
         input = new ArrayList<>(Arrays.asList("James","Keaton","Tammy"));
         expectedOutput = new ArrayList<>(Arrays.asList("James","Keaton","Tammy"));
+        StringListSort.insertionSort(input);
+        actualOutput = input;
+        assertEquals(expectedOutput,actualOutput);
+
+
+
+        input = new ArrayList<>(Arrays.asList());
+        expectedOutput = new ArrayList<>(Arrays.asList());
         StringListSort.insertionSort(input);
         actualOutput = input;
         assertEquals(expectedOutput,actualOutput);
